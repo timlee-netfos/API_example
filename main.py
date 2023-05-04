@@ -14,7 +14,7 @@ with open("test.json", "w") as fw:
 r = API.post_info("detections", payload=payload)
 print(r.json())
 
-r = API.post_info("detections", payload=payload)
+r = API.patch_info("detections", payload=payload)
 print(r.status_code)
 
 
